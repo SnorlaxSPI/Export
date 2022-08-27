@@ -4,10 +4,10 @@ import { Category } from '../model';
 
 const categories = [];
 
+const category = new Category();
+
 export const execute = (request:Request, response:Response) => {
   const { name, description } = request.body;  
-  
-  const category = new Category();
   
   Object.assign(category, {
     id: uuidV4(),

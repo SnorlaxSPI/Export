@@ -5,7 +5,9 @@
   "author": "aflinsjr@icloud.com <aflinsjr@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev:server": "tsnd --respawn --files --ignore-watch node_modules --transpile-only src/app.ts"
+    "dev:const": "tsnd --respawn --files --ignore-watch node_modules --transpile-only src/appConst.ts",
+    "dev:class": "tsnd --respawn --files --ignore-watch node_modules --transpile-only src/appClass.ts",
+    "dev:default": "tsnd --respawn --files --ignore-watch node_modules --transpile-only src/appDefault.ts"
   },
   "dependencies": {
     "express": "^4.18.1"
